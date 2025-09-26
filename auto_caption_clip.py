@@ -7,13 +7,10 @@ import numpy as np
 import pandas as pd
 from PIL import Image
 
-try:
-    import open_clip
-    import torch
-except Exception as e:  # pragma: no cover
-    raise RuntimeError(
-        "Missing dependencies. Please install torch and open-clip-torch."
-    ) from e
+import open_clip
+import torch
+
+
 
 from openpyxl import load_workbook
 from openpyxl.workbook.workbook import Workbook as XLWorkbook
